@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFix2.UI", "WinFix2.UI\WinFix2.UI.csproj", "{1BDE97DC-66E0-45A2-8229-CA34C281C161}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFix2.Core", "WinFix2.Core\WinFix2.Core.csproj", "{B3310611-F72B-4815-A05B-D543D2DDE752}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A920C794-69DD-4F8B-87A8-695459C230F1}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BDE97DC-66E0-45A2-8229-CA34C281C161}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BDE97DC-66E0-45A2-8229-CA34C281C161}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BDE97DC-66E0-45A2-8229-CA34C281C161}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BDE97DC-66E0-45A2-8229-CA34C281C161}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3310611-F72B-4815-A05B-D543D2DDE752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3310611-F72B-4815-A05B-D543D2DDE752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3310611-F72B-4815-A05B-D543D2DDE752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3310611-F72B-4815-A05B-D543D2DDE752}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB0EE56F-8148-4C5E-B8E0-4B98F707A9FA}
+	EndGlobalSection
+EndGlobal

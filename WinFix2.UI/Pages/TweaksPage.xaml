@@ -1,0 +1,26 @@
+<Page x:Class="WinFix2.UI.Pages.TweaksPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WinFix2.UI.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="TweaksPage">
+
+  <Grid Style="{StaticResource pageStyle}">
+    <Grid.RowDefinitions>
+      <RowDefinition/>
+      <RowDefinition Height="32"/>
+    </Grid.RowDefinitions>
+
+    <StackPanel x:Name="stackPanel"/>
+    <WrapPanel Grid.Row="1" HorizontalAlignment="Right">
+      <Button x:Name="currentButton" Content="Current"/>
+      <Button x:Name="defaultButton" Content="Default"/>
+      <Button x:Name="recommendedButton" Content="Recommended"/>
+      <Button x:Name="optimizedButton" Content="Optimized"/>
+      <Button x:Name="applyButton" Content="Apply"/>
+    </WrapPanel>
+  </Grid>
+</Page>

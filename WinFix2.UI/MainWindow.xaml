@@ -1,0 +1,39 @@
+<Window x:Class="WinFix2.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WinFix2.UI"
+        xmlns:components="clr-namespace:WinFix2.UI.Components"
+        xmlns:pages="clr-namespace:WinFix2.UI.Pages"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="520">
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="auto"/>
+      <ColumnDefinition/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition/>
+      <RowDefinition Height=".4*"/>
+    </Grid.RowDefinitions>
+
+    <ListBox x:Name="navMenu" Grid.Column="0" Grid.Row="0"
+             Background="LightGray" Style="{StaticResource navMenuStyle}">
+      <components:NavItem Title="Services" NavPage="{x:Static pages:ServicesPage.Instance}" IsSelected="True"/>
+      <components:NavItem Title="Privacy" NavPage="{x:Static pages:PrivacyPage.Instance}"/>
+      <components:NavItem Title="Performance" NavPage="{x:Static pages:PerformancePage.Instance}"/>
+      <components:NavItem Title="Tweaks" NavPage="{x:Static pages:TweaksPage.Instance}"/>
+    </ListBox>
+
+    <Frame x:Name="navFrame" Grid.Column="1" Grid.Row="0"
+           NavigationUIVisibility="Hidden"
+           Padding="4" Content="{x:Static pages:ServicesPage.Instance}"/>
+
+    <ScrollViewer x:Name="consoleScroll" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="99"
+                  HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+      <TextBox x:Name="consoleBox" Margin="0"
+               VerticalAlignment="Stretch" Background="LightGray" FontFamily="Lucida Console"/>
+    </ScrollViewer>
+  </Grid>
+</Window>
